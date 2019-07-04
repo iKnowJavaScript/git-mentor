@@ -19,10 +19,7 @@ const UserStory = () => {
       </div>
       <div className={styles.grid_container}>
         <div className={styles.grid_block}>
-          <a
-            href="#"
-            className={styles.mentor_card}
-          >
+          <a href="#" className={styles.mentor_card}>
             <figure>
               <img
                 className={styles.card_image}

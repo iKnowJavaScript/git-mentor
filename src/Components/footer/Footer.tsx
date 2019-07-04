@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.footer}>
-          <div className={styles.copyright}>© Copyright 2019 Codementor</div>
+          <div className={styles.copyright}>© Copyright 2019 GitMentor</div>
           <div className={styles.links}>
             <a href="./" className={styles.others}>
               Privacy Policy

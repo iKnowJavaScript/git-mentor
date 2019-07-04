@@ -3,6 +3,7 @@ import './pages/css/App.css';
 import './pages/css/reset.css';
 import Homepage from './pages/Homepage';
 import Mentors from './pages/Mentors';
+import Profile from './pages/Profile';
 
 // type Detail = {
 //   name: string;
@@ -14,8 +15,9 @@ const App = () => {
   return (
     <>
       {/* <Homepage /> */}
-      <Mentors />
+      {/* <Mentors /> */}
 
+      <Profile />
     </>
   );
 };
