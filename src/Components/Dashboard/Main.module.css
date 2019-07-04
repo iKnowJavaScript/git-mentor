@@ -1,0 +1,75 @@
+.main {
+  flex: 1;
+  color: black;
+  margin-left: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr {
+  color: white;
+  border: 0.7px solid rgb(243, 239, 239);
+  margin: 2rem 0;
+}
+.about > p {
+  font-weight: 200;
+}
+
+.about > h2,
+.skills > h2 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.expert {
+  border-radius: 2px;
+  background-color: #e6e6e6;
+  color: #666;
+  padding: 4px 8px;
+  font-size: 20px;
+  margin: 2rem 3rem 3rem;
+  font-weight: 200;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid rgb(214, 211, 211);
+  flex: 1;
+  padding: 1rem;
+}
+
+.box h2 {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.box h3 {
+  color: #f19173;
+  font-weight: 400;
+}
+
+.mentoring {
+  margin: 0 2rem;
+}
+
+@media (max-width: 800px) {
+  .skills,
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .aside {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}

@@ -4,6 +4,8 @@
   font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial,
     sans-serif;
   color: #454545;
+  border-bottom:1px solid #443674;
+
 }
 
 .navbarHeaderTransparent * {

@@ -53,7 +53,7 @@ const MentorList = () => {
         </div>
         <div className={styles.expertise}>
           {' '}
-          <p> Expert In:</p> <span className={styles.expert}>PHP</span>
+          <p> SKILLS</p> <span className={styles.expert}>PHP</span>
           <span className={styles.expert}>JavaScript</span>{' '}
           <span className={styles.expert}>MySql</span>
           <span className={styles.expert}>Git</span>

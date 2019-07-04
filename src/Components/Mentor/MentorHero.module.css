@@ -11,7 +11,7 @@
   color: white;
   overflow: hidden;
   transform: translateY(-68px);
-  background-color: #4a154b;
+  background-color: #33255f;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
   width: 100%;
   text-align: center;
   position: relative;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .experts {

@@ -4,8 +4,8 @@ import HeaderNav from '../Components/Header/HeaderNav';
 import MentorHero from '../Components/Mentor/MentorHero';
 import MentorList from '../Components/Mentor/MentorList';
 import LoadMore from '../Components/Mentor/LoadMore';
-import Footer from '../Components/Footer/Footer';
 import Greeting from '../Components/Sections/Greeting';
+import Footer from '../Components/Footer/Footer';
 
 const Mentors = () => {
   return (
@@ -23,7 +23,6 @@ const Mentors = () => {
       <LoadMore />
 
       <Greeting />
-
       <Footer />
     </>
   );
