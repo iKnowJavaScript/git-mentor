@@ -173,3 +173,9 @@ a {
     display: none !important;
   }
 }
+
+.community:hover,
+.signIn:hover {
+  cursor: pointer;
+  color: #0a0909;
+}
