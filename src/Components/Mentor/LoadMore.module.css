@@ -1,0 +1,38 @@
+.loadMore {
+  display: flex;
+}
+
+.button {
+  flex: 1;
+  color: rgb(51, 51, 51);
+  min-width: 70px;
+  width: auto;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(230, 230, 230);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  border-image: initial;
+  border-radius: 3px;
+  outline: none;
+  padding: 16px 32px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+.button:hover {
+  color: rgb(51, 51, 51);
+  background: rgb(222, 222, 222);
+  border-color: rgb(222, 222, 222);
+}

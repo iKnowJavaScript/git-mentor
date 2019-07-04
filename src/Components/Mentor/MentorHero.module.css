@@ -1,0 +1,122 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  padding: 70px 20px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  transform: translateY(-68px);
+  background-color: #4a154b;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+}
+
+.experts {
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
+}
+
+.svgElelment {
+  margin-right: 16px;
+  width: 60px;
+  height: 60px;
+}
+
+.inputSearch {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -22px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  border: solid 1px #e9eaec;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.searchSVG {
+  display: inline-flex;
+}
+
+.searchInput {
+  flex: 1;
+  background: #fff;
+}
+
+.topInput {
+  border: none;
+  padding: 10px 0 10px 12px;
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.reactForm {
+  border: none;
+  padding: 10px 0 10px 12px;
+
+  display: flex;
+  position: relative;
+  background-color: transparent;
+}
+
+.inputStyle {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+.searchContainer {
+  padding-bottom: 0;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.top_input {
+  color: rgb(51, 51, 51);
+  line-height: 24px;
+  font-size: 14px;
+  min-width: 400px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  transition: all 0.4s ease-out 0s;
+  outline: none;
+  background: none;
+  /* border: 1px solid #4a154b; */
+}
+
+.top_input:active,
+.top_input:focus {
+  border-bottom: 1px solid #4a154b;
+}

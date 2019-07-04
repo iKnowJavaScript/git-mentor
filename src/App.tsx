@@ -2,6 +2,7 @@ import React from 'react';
 import './pages/css/App.css';
 import './pages/css/reset.css';
 import Homepage from './pages/Homepage';
+import Mentors from './pages/Mentors';
 
 // type Detail = {
 //   name: string;
@@ -12,7 +13,9 @@ import Homepage from './pages/Homepage';
 const App = () => {
   return (
     <>
-      <Homepage />
+      {/* <Homepage /> */}
+      <Mentors />
+
     </>
   );
 };
