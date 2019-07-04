@@ -1,0 +1,180 @@
+.userStory {
+  background-color: #f5f5f5;
+  padding-top: 5rem;
+  margin-top: 4rem;
+  overflow: hidden;
+  padding: 3rem 0;
+  display: block;
+  font-weight: 700;
+  line-height: 1.1875;
+}
+
+.container {
+  padding: 0 4vw;
+  margin: 0 auto;
+  font-family: Slack-Circular-Pro, 'Helvetica Neue', Helvetica, 'Segoe UI', Tahoma, Arial,
+    sans-serif;
+}
+
+.header {
+  padding: 0 4vw;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding: 0 4vw;
+  max-width: 54rem;
+  margin: 0 auto;
+}
+
+.header h2 {
+  font-size: 3.125rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.paragraph {
+  font-weight: 400;
+  line-height: 1.333;
+  letter-spacing: -0.2px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section_link {
+  border-bottom: none;
+  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.44444444;
+  position: relative;
+}
+
+a {
+  color: #715a72;
+  cursor: pointer;
+  text-decoration: none;
+  word-break: break-word;
+  border: 0px solid white;
+}
+
+.section_link:hover {
+  cursor: pointer;
+  color: #1264a3;
+  border-bottom-color: #1264a3;
+  border-bottom-width: 2px;
+}
+
+.section_link:before {
+  border-bottom: 2px solid #1264a3;
+}
+.section_link::before {
+  transition: width 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  border-bottom: 2px solid #1264a3;
+  content: '';
+}
+
+.section_link:after {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%206a.5.5%200%200%200%200%201V6zM12.854.646a.5.5%200%200%200-.708.708l.708-.708zM18%206.5l.354.354a.5.5%200%200%200%200-.708L18%206.5zm-5.854%205.146a.5.5%200%200%200%20.708.708l-.708-.708zM1%207h16.5V6H1v1zm16.646-.854l-5.5%205.5.708.708%205.5-5.5-.708-.708zm-5.5-4.792l2.75%202.75.708-.708-2.75-2.75-.708.708zm2.75%202.75l2.75%202.75.708-.708-2.75-2.75-.708.708z%22%20fill%3D%22%231264A3%22%2F%3E%3C%2Fsvg%3E');
+  content: '';
+  width: 19px;
+  height: 13px;
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.grid_block {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: grid;
+  grid-gap: 1rem 2.43902439%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .grid_block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 4.43902439%;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid_block {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem 4.43902439%;
+  }
+}
+
+.grid_block:nth-child(n) {
+  margin-right: 0;
+}
+
+.mentor_card {
+  flex-basis: 20.17%;
+  margin-bottom: 2.43902439%;
+  margin-left: 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px auto;
+  color: inherit;
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: block;
+  padding: 10px 10px 35px;
+  border-bottom: none;
+  position: relative;
+  z-index: 1;
+  break-inside: avoid;
+  flex-direction: column;
+  transition: transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.card_image {
+  margin-bottom: 20px;
+}
+
+.mentor_name {
+  transition: filter 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  filter: grayscale(100%);
+  margin-bottom: 20px;
+}
+
+.info_text {
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: 1.225rem;
+}
+
+.info_text:after {
+  content: '';
+  width: 25px;
+  height: 14px;
+  position: absolute;
+  bottom: 13px;
+  right: 15px;
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%206a.5.5%200%200%200%200%201V6zM12.854.646a.5.5%200%200%200-.708.708l.708-.708zM18%206.5l.354.354a.5.5%200%200%200%200-.708L18%206.5zm-5.854%205.146a.5.5%200%200%200%20.708.708l-.708-.708zM1%207h16.5V6H1v1zm16.646-.854l-5.5%205.5.708.708%205.5-5.5-.708-.708zm-5.5-4.792l2.75%202.75.708-.708-2.75-2.75-.708.708zm2.75%202.75l2.75%202.75.708-.708-2.75-2.75-.708.708z%22%20fill%3D%22%231264A3%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.mentor_card:hover {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+}
+.mentor_card:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.grid_container {
+  padding: 2rem 5rem;
+}

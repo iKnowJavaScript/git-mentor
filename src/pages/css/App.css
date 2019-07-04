@@ -12,3 +12,15 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #ffffff;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  background: transparent;
+}

@@ -1,0 +1,202 @@
+.heroContainer {
+  position: relative;
+  background: linear-gradient(270deg, #382868 0%, #161027 100%);
+  width: 100%;
+  padding: 70px 20px;
+  padding-bottom: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  transform: translateY(-68px);
+  background-color: #4a154b;
+}
+
+.heroContent {
+  margin-top: 30px;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.matrixStyle {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.boldHeadline {
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange {
+  background-color: #e65328;
+  color: #fff;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 4px 30px;
+  font-size: 18px;
+  line-height: 40px;
+  min-width: 140px;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 4px;
+  user-select: none;
+  transition: transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+button,
+a {
+  font-weight: 400;
+  color: #6b4fbb;
+  text-decoration: none;
+}
+
+.flexButton {
+  color: #e65328;
+  background-color: #fff;
+  margin-left: 20px;
+  border-color: #fff;
+  transition: all 0.2s;
+}
+
+.playIcon {
+  /* font-size: 14px; */
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.announcementContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+  border-radius: 3px;
+  width: calc(100% - 40px);
+  transform: translateY(-120px);
+  text-decoration: none;
+  transition: 0.2s cubic-bezier(0, 0, 0, 1);
+  color: #000;
+}
+
+.icon {
+  width: 40px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+img {
+  max-width: 100%;
+}
+img {
+  vertical-align: middle;
+}
+img {
+  border: 0;
+}
+
+.iconContent {
+  margin-right: 40px;
+  width: 100%;
+}
+
+.announcementArrow {
+  height: 16px;
+  transition: 0.2s cubic-bezier(0, 0, 0, 1);
+  transform: translateX(-20px);
+}
+
+.headerBackground {
+  background-image: url('https://next-cdn.codementor.io/static/images/landing-page/hero-l.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 755px;
+  height: 389px;
+  margin: auto;
+  z-index: 5;
+}
+
+.heroBg {
+  position: absolute;
+  width: 25%;
+}
+
+.heroBgLeft {
+  left: 0;
+}
+
+.heroBgRight {
+  right: 30px;
+  bottom: 20%;
+}
+
+.contactMentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.margin-top0 {
+  margin-top: 0;
+}
+h2 {
+  font-size: 34px;
+}
+h2 {
+  margin-bottom: 13.5px;
+}
+.contactMentor p {
+  max-width: 700px;
+}
+
+p {
+  margin: 0 0 13.5px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+button,
+a {
+  font-weight: 400;
+}
