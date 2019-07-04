@@ -1,28 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './HeaderNav.module.css';
 import { Link } from 'react-router-dom';
+import Modal from '../Modal/Modal';
 
 const HeaderNav = () => {
+  const [isModal, setModal] = useState(false);
+  const handleModal = () => {
+    setModal(() => !isModal);
+  };
+
   return (
     <header className={`${styles.navbar} ${styles.navbarHeaderTransparent}`}>
       <div className="navLeft">
-        <a className={`${styles.navbarBrand} ${styles.animated}`} href="#">
+        <Link
+          to="/"
+          rel="noopener noreferrer"
+          className={`${styles.navbarBrand} ${styles.animated}`}
+        >
           GitMentor
-        </a>
+        </Link>
       </div>
       <div className={styles.navRight}>
         <ul>
           <Link to="/mentors" rel="noopener noreferrer">
             <li className={`${styles.mainNav} ${styles.button}`}>Mentors</li>{' '}
           </Link>
-          <li className={`${styles.mainNav} ${styles.community}`}>Community</li>
-          <li className={`${styles.mainNav} ${styles.about}`}>About</li>
+          <Link to="/" rel="noopener noreferrer">
+            <li className={`${styles.mainNav} ${styles.community}`}>Community</li>
+          </Link>
+          <Link to="/" rel="noopener noreferrer">
+            <li className={`${styles.mainNav} ${styles.about}`}>About</li>
+          </Link>
           <div className={styles.controlNav}>
-            <li className={styles.signIn}>Sign in</li>
-            <li className={`${styles.signUp} ${styles.button}`}>Register</li>
+            <Link to="/" rel="noopener noreferrer">
+              <li className={styles.signIn}>Sign in</li>
+            </Link>
+            <Link to="/" rel="noopener noreferrer">
+              <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
+                Register
+              </li>
+            </Link>
           </div>
         </ul>
       </div>
+      <Modal open={isModal} toggle={handleModal}/>
     </header>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HeroHeader.module.css';
+import { Link } from 'react-router-dom';
 
 // className="bold-headline margin-top0 hero-item"
 const HeroHeader = () => {
@@ -33,9 +34,13 @@ const HeroHeader = () => {
             <a className={`${styles.button} ${styles.ctaButton} ${styles.orange}`} href="/#">
               Try Mentor for Free
             </a>
-            <a className={`${styles.button} ${styles.ctaButton} ${styles.flexButton}`} href="/#/">
+            <Link
+              to="/mentors"
+              rel="noopener noreferrer"
+              className={`${styles.button} ${styles.ctaButton} ${styles.flexButton}`}
+            >
               <div className={`i fas fa-play play-icon ${styles.playIcon}`}> Explore Fields </div>
-            </a>
+            </Link>
           </div>
         </div>
         {/* backgroung */}
@@ -61,13 +66,14 @@ const HeroHeader = () => {
       <div className={styles.contactMentor}>
         <h2 className={styles.marginTop0}>Are you ready?</h2>{' '}
         <p>You can have a mini chat with an expert before choosing Mentor</p>
-        <a
+        <Link
+          to="/mentors"
+          rel="noopener noreferrer"
           className={`${styles.button} ${styles.ctaButton} ${styles.orange} ${styles.marginTop20}`}
-          href="/#"
         >
           {' '}
           Contact Expert{' '}
-        </a>
+        </Link>
         <a className={styles.marginTop20} href="/#">
           {' '}
           Or, get started now with a free trial{' '}

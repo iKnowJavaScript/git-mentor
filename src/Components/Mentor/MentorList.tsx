@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MentorList.module.css';
 import Star from './Star';
+import { Link } from 'react-router-dom';
 
 const MentorList = () => {
   return (
@@ -64,8 +65,13 @@ const MentorList = () => {
         </div>
       </div>
       <div className={styles.hire}>
-        <div className={`${styles.button} ${styles.colored}`}>View Profile</div>
-        <div className={`${styles.button} ${styles.border}`}>GitHub Profile</div>
+        <Link to="/profile" rel="noopener noreferrer">
+          <div className={`${styles.button} ${styles.colored}`}>View Profile</div>
+        </Link>
+        <a href="http://github.com">
+          {' '}
+          <div className={`${styles.button} ${styles.border}`}>GitHub Profile</div>
+        </a>
       </div>
     </div>
   );
