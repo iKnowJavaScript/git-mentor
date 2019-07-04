@@ -9,7 +9,7 @@ const Aside = () => {
         <div className={styles.profile}>
           <div className={styles.top} />
           <div className={styles.image}>
-            <img
+            <img className={styles.asideImage}
               alt="Marcos Casagrande"
               src="https://process.filestackapi.com/cache=expiry:max/resize=width:240/Um7YHRMHQ3qx59ev8I5f"
             />

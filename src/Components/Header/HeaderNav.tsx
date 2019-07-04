@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './HeaderNav.module.css';
+import { Link } from 'react-router-dom';
 
 const HeaderNav = () => {
   return (
@@ -11,7 +12,9 @@ const HeaderNav = () => {
       </div>
       <div className={styles.navRight}>
         <ul>
-          <li className={`${styles.mainNav} ${styles.button}`}>Mentors</li>
+          <Link to="/mentors" rel="noopener noreferrer">
+            <li className={`${styles.mainNav} ${styles.button}`}>Mentors</li>{' '}
+          </Link>
           <li className={`${styles.mainNav} ${styles.community}`}>Community</li>
           <li className={`${styles.mainNav} ${styles.about}`}>About</li>
           <div className={styles.controlNav}>
