@@ -3,8 +3,11 @@ import styles from './DashboardHero.module.css';
 
 const DashboardHero = () => {
   return (
-    <h1>Hello there</h1>
-  )
-}
+    <div className={styles.heroContainer}>
+      
+      
+    </div>
+  );
+};
 
-export default DashboardHero
+export default DashboardHero;
