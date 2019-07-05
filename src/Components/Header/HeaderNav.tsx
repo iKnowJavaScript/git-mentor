@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import styles from './HeaderNav.module.css';
 import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
+import firebase from 'firebase';
 
 const HeaderNav = () => {
   const [isModal, setModal] = useState(false);
-  
+
   const handleModal = () => {
     setModal(() => !isModal);
   };
@@ -36,15 +37,14 @@ const HeaderNav = () => {
             <Link to="/" rel="noopener noreferrer">
               <li className={styles.signIn}>Sign in</li>
             </Link>
-           
-              <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
-                Register
-              </li>
-          
+
+            <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
+              Register
+            </li>
           </div>
         </ul>
       </div>
-      <Modal open={isModal} toggle={handleModal}/>
+      <Modal open={isModal} toggle={handleModal} />
     </header>
   );
 };
