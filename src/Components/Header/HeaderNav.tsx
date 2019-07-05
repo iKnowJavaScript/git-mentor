@@ -5,6 +5,7 @@ import Modal from '../Modal/Modal';
 
 const HeaderNav = () => {
   const [isModal, setModal] = useState(false);
+  
   const handleModal = () => {
     setModal(() => !isModal);
   };
@@ -35,11 +36,11 @@ const HeaderNav = () => {
             <Link to="/" rel="noopener noreferrer">
               <li className={styles.signIn}>Sign in</li>
             </Link>
-            <Link to="/" rel="noopener noreferrer">
+           
               <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
                 Register
               </li>
-            </Link>
+          
           </div>
         </ul>
       </div>

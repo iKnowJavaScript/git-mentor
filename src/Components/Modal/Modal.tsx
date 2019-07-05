@@ -1,23 +1,22 @@
 import React from 'react';
-import Drawer
- from 'react-drag-drawer';
+import Drawer from 'react-drag-drawer';
 
 import styles from './Modal.module.css';
+import Signup from './Signup';
+import Signin from './Signin';
 
 const Modal = ({ open, toggle }: any) => {
   return (
     <Drawer open={open} onRequestClose={toggle}>
       <div className={`${styles.modal} ${styles.app}`}>
-        <div className={styles.textCenter}>  
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
-
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
-        <h2>Sign In with Github</h2>
+        <div className={styles.container}>
+          <h2 className={styles.heading}>Gitmentor</h2>
+          <div className={styles.form}>
+            <Signin />
+          </div>
+          <h2 className={styles.bottom}>
+            or You rather <a className={styles.link}>Sign up</a>
+          </h2>
         </div>
       </div>
     </Drawer>
