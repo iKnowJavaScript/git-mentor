@@ -20,16 +20,13 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border: 2px solid #33255f;
-  padding: 8px 16px;
+
   font-size: 14px;
   line-height: 1.5;
   border-radius: 4px;
   background-color: white;
   color: #33255f;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: 300px;
+
   word-wrap: none;
   word-break: keep-all;
   margin-bottom: 2rem;
@@ -40,6 +37,16 @@
 .disable {
   opacity: 0.4;
   cursor: text;
+}
+
+.create,
+.input,
+.disable {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 300px;
+  border: 2px solid #33255f;
+  padding: 8px 16px;
 }
 
 .create {

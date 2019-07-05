@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
 import firebase from 'firebase';
 
+
 const HeaderNav = () => {
   const [isModal, setModal] = useState(false);
+  const [isSignedin, setSignin] = useState(false);
 
   const handleModal = () => {
     setModal(() => !isModal);
