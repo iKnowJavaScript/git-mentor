@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Redirect } from 'react-router';
 import styles from './Signin.module.css';
 
 import * as firebase from 'firebase';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+
+import { UserLogStatus, UserObject } from '../../Context/Context';
 
 firebase.initializeApp({
   apiKey: 'AIzaSyCPluhTwNxaZyeGKQaXmS_LW7t2OU6DN1U',
@@ -13,15 +15,9 @@ firebase.initializeApp({
 
 const firebaseAuth: any = firebase.auth();
 
-interface State {
-  isSignedIn?: boolean;
-}
-
-const Signin = ({ props }: any) => {
-  console.log('singdjjfd', props);
-
-  const [state, setState] = useState<State>({ isSignedIn: false });
-  const [userData, setUserData] = useState<any>({});
+const Signin = (props: any) => {
+  const { isLoggedin, setLoggedIn } = useContext(UserLogStatus) as any;
+  const { userData, setUserData } = useContext(UserObject) as any;
 
   const uiConfig: any = {
     signInFlow: 'popup',
@@ -33,25 +29,17 @@ const Signin = ({ props }: any) => {
 
   useEffect(() => {
     return firebaseAuth.onAuthStateChanged((user: any) => {
-      setState({ isSignedIn: !!user });
+      setLoggedIn({ isSignedIn: !!user });
       const { providerData } = user;
 
-      setUserData(() => providerData[0]);
+      return setUserData(providerData[0]);
     });
-  }, []);
-
-  // const { from }: any = props.location.state || { from: { pathname: '/profile' } };
+  }, [setLoggedIn, setUserData]);
 
   return (
     <div className="App">
-      {state.isSignedIn ? (
-        <span>
-          <div>Signed In!</div>
-          <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-          <h1>Welcome {firebaseAuth.currentUser.displayName}</h1>
-          <img alt="profile picture" src={firebaseAuth.currentUser.photoURL} />
-          <Redirect to={{ pathname: '/profile', state: userData }} />
-        </span>
+      {isLoggedin.isSignedIn ? (
+        <Redirect to="/profile" />
       ) : (
         <>
           <div className={styles.signin}>

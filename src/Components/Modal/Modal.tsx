@@ -12,7 +12,7 @@ const Modal = ({ open, toggle, props }: any) => {
         <div className={styles.container}>
           <h2 className={styles.heading}>Gitmentor</h2>
           <div className={styles.form}>
-            <Signin props={props}/>
+            <Signin props={props} />
           </div>
           <h2 className={styles.bottom}>
             or You rather <a className={styles.link}>Sign up</a>

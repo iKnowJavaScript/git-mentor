@@ -7,10 +7,10 @@ import LoadMore from '../Components/Mentor/LoadMore';
 import Greeting from '../Components/Sections/Greeting';
 import Footer from '../Components/Footer/Footer';
 
-const Mentors = () => {
+const Mentors = (props: any) => {
   return (
     <>
-      <HeaderNav />
+      <HeaderNav props={props}/>
       <MentorHero />
       <MentorList />
       <MentorList />

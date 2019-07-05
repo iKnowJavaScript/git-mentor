@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Aside.module.css';
 import Star from '../Mentor/Star';
 
-const Aside = ({ state }: any) => {
-  const { email, displayName, photoURL } = state;
+const Aside = ({ userData }: any) => {
+  const { email, displayName, photoURL } = userData;
   return (
     <aside className={styles.aside}>
       <div className={styles.container}>

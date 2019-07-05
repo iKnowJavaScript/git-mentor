@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Main.module.css';
 
-const Main = ({ state }: any) => {
-  console.log('main', state);
-  const { email, displayName, photoURL } = state;
+const Main = ({ userData }: any) => {
+  const { email, displayName, photoURL } = userData;
 
   return (
     <main className={styles.main}>

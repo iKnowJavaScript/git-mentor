@@ -30,7 +30,7 @@ const MentorHero = () => {
           <div className={styles.reactForm}>
             <span className={styles.searchSVG}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <g fill-rule="nonzero" fill="none">
+                <g fillRule="nonzero" fill="none">
                   <path d="M0 0h24v24H0z" />
                   <path
                     fill="#000"
