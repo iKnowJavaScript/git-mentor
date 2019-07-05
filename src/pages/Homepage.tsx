@@ -6,10 +6,10 @@ import UserStory from '../Components/Sections/UserStory';
 import Greeting from '../Components/Sections/Greeting';
 import Footer from '../Components/Footer/Footer';
 
-const Homepage = () => {
+const Homepage = (props: any) => {
   return (
     <>
-      <HeaderNav />
+      <HeaderNav props={props} />
       <HeroHeader />
       <UserStory />
       <Greeting />

@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import styles from './HeaderNav.module.css';
 import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
-import firebase from 'firebase';
+// import firebase from 'firebase';
 
-
-const HeaderNav = () => {
+const HeaderNav = ({ props }: any) => {
   const [isModal, setModal] = useState(false);
   const [isSignedin, setSignin] = useState(false);
 
@@ -46,7 +45,7 @@ const HeaderNav = () => {
           </div>
         </ul>
       </div>
-      <Modal open={isModal} toggle={handleModal} />
+      <Modal open={isModal} toggle={handleModal} props={props} />
     </header>
   );
 };

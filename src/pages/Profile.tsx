@@ -4,11 +4,11 @@ import DashboardHero from '../Components/Dashboard/Dashboard';
 import Greeting from '../Components/Sections/Greeting';
 import Footer from '../Components/Footer/Footer';
 
-const Profile = () => {
+const Profile = ({ location: { state } }: any) => {
   return (
     <>
       <HeaderNav />
-      <DashboardHero />
+      <DashboardHero state={state} />
       <Greeting />
       <Footer />
     </>

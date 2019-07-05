@@ -11,6 +11,7 @@ const Navigator = () => {
         <Route exact path="/" component={Homepage} />
         <Route path="/mentors" component={Mentors} />
         <Route path="/profile" component={Profile} />
+        {/* <Route path="/profile" component={Profile} /> */}
         <Route
           render={() => (
             <h1
