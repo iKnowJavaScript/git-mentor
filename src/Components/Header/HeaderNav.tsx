@@ -23,13 +23,13 @@ const HeaderNav = () => {
 
   return (
     <header className={`${styles.navbar} ${styles.navbarHeaderTransparent}`}>
-      <div className="navLeft">
+      <div className={styles.navLeft}>
         <Link
           to="/"
           rel="noopener noreferrer"
           className={`${styles.navbarBrand} ${styles.animated}`}
         >
-          GitMentor
+          Gitmentor
         </Link>
       </div>
       <div className={styles.navRight}>

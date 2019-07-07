@@ -31,6 +31,12 @@
   font-size: 3rem;
 }
 
+@media (max-width: 1000px) {
+  .greeting_text {
+    font-size: 2rem;
+  }
+}
+
 .button {
   border-bottom: none;
   background: 0 0;
@@ -58,4 +64,10 @@
   background-color: #fff;
   color: #e65328;
   fill: #e65328;
+}
+
+@media (max-width: 400px) {
+  .secondary {
+    font-size: 0.6rem;
+  }
 }

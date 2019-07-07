@@ -8,12 +8,10 @@ const HeroHeader = () => {
     <>
       <div className={styles.heroContainer}>
         <img
-          alt="Gitlab hero background left svg"
           className={`${styles.heroBg} ${styles.heroBgLeft}`}
           src="https://about.gitlab.com/images/home/hero-bg-left.svg"
         />
         <img
-          alt="Gitlab hero background right svg"
           className={`${styles.heroBg} ${styles.heroBgRight}`}
           src="https://about.gitlab.com/images/home/hero-bg-right.svg"
         />
@@ -25,10 +23,11 @@ const HeroHeader = () => {
           </h1>
           <div className={`${styles.heroItem} ${styles.matrixStyle}`}>
             <p>
-              GitLab is a single application for the entire software development lifecycle. From
-              project planning and source code management to CI/CD, monitoring, and security.{' '}
+              <span className={styles.disclaimer}>Disclaimer:</span> This is a space for those
+              looking to accelerate their career in Tech world, Gitmentor made it easy by connecting
+              you with Industry experts for advice and direction.
             </p>
-            <p className={styles.noAssembly}> *No assembly required. </p>
+            <p className={styles.noAssembly}> *GitHub accout is required. </p>
           </div>
           <div className={`${styles.buttonsContainer} ${styles.matrixStyle}`}>
             <a className={`${styles.button} ${styles.ctaButton} ${styles.orange}`} href="/#">
@@ -49,7 +48,7 @@ const HeroHeader = () => {
       </div>
       {/* </div>  hero ends */}
 
-      <a className={styles.announcementContainer} href="/#">
+      <div className={styles.announcementContainer}>
         <img
           className={styles.icon}
           src="https://about.gitlab.com/images/press/press-release-icon.svg"
@@ -57,12 +56,14 @@ const HeroHeader = () => {
         <div className={styles.iconContent}>
           <p> Feel free to explore your mentor Git Repos in Dashboard </p>
         </div>
-        <img
-          alt="Gitlab arrow svg"
-          className={styles.announcementArrow}
-          src="https://about.gitlab.com/images/solutions/arrow.svg"
-        />
-      </a>
+        <Link to="/mentors">
+          <img
+            alt="Gitlab arrow svg"
+            className={styles.announcementArrow}
+            src="https://about.gitlab.com/images/solutions/arrow.svg"
+          />
+        </Link>
+      </div>
       <div className={styles.contactMentor}>
         <h2 className={styles.marginTop0}>Are you ready?</h2>{' '}
         <p>You can have a mini chat with an expert before choosing Mentor</p>

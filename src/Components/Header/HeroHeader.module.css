@@ -23,18 +23,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .matrixStyle {
   opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
+  font-family: 'Karla', sans-serif;
+  width: 70%;
+  font-size: 1.4rem;
+}
+
+.disclaimer {
+  color: #e65328;
 }
 
 .boldHeadline {
   font-size: 72px;
-  font-weight: 700;
   text-align: center;
+  font-family: 'Unlock', cursive;
 }
 
 .buttonsContainer {
@@ -134,6 +141,8 @@ img {
 .iconContent {
   margin-right: 40px;
   width: 100%;
+  margin-top: 8px;
+  font-family: 'Cinzel', serif;
 }
 
 .announcementArrow {
@@ -174,6 +183,8 @@ img {
   padding: 0 20px;
   padding-top: 0;
   text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  margin-top: -3rem;
 }
 
 .margin-top0 {
@@ -199,4 +210,39 @@ p {
 button,
 a {
   font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .headerBackground {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .boldHeadline {
+    font-size: 2.7rem;
+  }
+
+  .matrixStyle {
+    font-size: 1rem;
+  }
+
+  .orange,
+  .playIcon,
+  .iconContent {
+    font-size: 0.7rem;
+  }
+  .iconContent {
+    padding: 0;
+  }
+  .announcementContainer {
+    width: 100%;
+  }
+}
+
+.noAssembly {
+  color: #dab9af;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1rem;
 }

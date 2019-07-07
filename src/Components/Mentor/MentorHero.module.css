@@ -23,12 +23,12 @@
 }
 
 .experts {
-  font-family: 'Raleway', sans-serif;
   font-size: 38px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   color: #fff;
+  font-family: 'Palanquin', 'Raleway', sans-serif;
 }
 
 .svg {

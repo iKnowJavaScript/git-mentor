@@ -13,6 +13,8 @@
 }
 
 .navbar {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
   position: sticky;
   top: 0;
   width: 100%;
@@ -37,6 +39,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  text-shadow: -2px -2px 2px #aaa, 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+.navbarBrand:hover {
+  color: black;
 }
 
 .navbarBrand a {
@@ -113,7 +120,7 @@ a {
 
 @media (max-width: 1200px) {
   .mainNav {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .signIn {
     padding-left: 50px;
@@ -185,4 +192,38 @@ a {
 
 .hide {
   display: none !important;
+}
+
+@media (max-width: 705px) {
+  .navbarBrand,
+  .signUp {
+    font-size: 1rem;
+    flex: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .navLeft {
+    position: absolute;
+    left: 0 !important;
+  }
+
+  .navLeft > a {
+    font-weight: 800;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .mainNav {
+    padding: 0;
+  }
+  .navbar {
+    padding: 0;
+  }
 }

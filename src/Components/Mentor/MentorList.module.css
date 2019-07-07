@@ -77,6 +77,7 @@
   margin-bottom: 10px;
   justify-content: space-between;
   margin-top: 10px;
+  font-family: 'Palanquin', 'Raleway', sans-serif;
 }
 
 .name {
@@ -97,11 +98,12 @@
 }
 
 .intro {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   color: #333;
   margin-bottom: 16px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: 'Karla', sans-serif;
 }
 
 .location {
@@ -125,6 +127,7 @@
   color: #666;
   line-height: 20px;
   font-weight: 200;
+  font-family: 'Palanquin', sans-serif;
 }
 
 .expertise {
@@ -149,7 +152,7 @@
 
 .availability {
   font-size: 15px;
-  font-weight: 300;
+  font-family: 'Karla', sans-serif;
 }
 
 .availability span:first-child {
