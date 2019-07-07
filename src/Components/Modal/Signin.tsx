@@ -1,12 +1,10 @@
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import { UserLogStatus, UserObject } from '../../Context/Context';
 import React, { useState, useEffect, useContext } from 'react';
 import { Redirect } from 'react-router';
 import styles from './Signin.module.css';
-
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-
-import { UserLogStatus, UserObject } from '../../Context/Context';
 
 firebase.initializeApp({
   apiKey: 'AIzaSyCPluhTwNxaZyeGKQaXmS_LW7t2OU6DN1U',
@@ -15,7 +13,7 @@ firebase.initializeApp({
 
 const firebaseAuth: any = firebase.auth();
 
-const Signin = (props: any) => {
+const Signin = () => {
   const { isLoggedin, setLoggedIn } = useContext(UserLogStatus) as any;
   const { userData, setUserData } = useContext(UserObject) as any;
 
@@ -29,17 +27,19 @@ const Signin = (props: any) => {
 
   useEffect(() => {
     return firebaseAuth.onAuthStateChanged((user: any) => {
-      setLoggedIn({ isSignedIn: !!user });
-      const { providerData } = user;
-
-      return setUserData(providerData[0]);
+      setLoggedIn(!!user);
+      console.log('llogedein in sign in', isLoggedin, { user });
+      if (user) {
+        const { providerData } = user;
+        return setUserData(providerData[0]);
+      }
     });
-  }, [setLoggedIn, setUserData]);
+  }, [isLoggedin, setLoggedIn, setUserData]);
 
   return (
     <div className="App">
-      {isLoggedin.isSignedIn ? (
-        <Redirect to="/profile" />
+      {isLoggedin ? (
+        <Redirect to="/mentors" />
       ) : (
         <>
           <div className={styles.signin}>

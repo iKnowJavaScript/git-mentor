@@ -1,24 +1,24 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import styles from './HeaderNav.module.css';
 import { Link } from 'react-router-dom';
 import Modal from '../Modal/Modal';
 import { UserLogStatus } from '../../Context/Context';
-import { Redirect } from 'react-router';
 
-const HeaderNav = ({ props }: any) => {
-  const [isModal, setModal] = useState(false);
+import * as firebase from 'firebase';
+import 'firebase/auth';
+const firebaseAuth: any = firebase.auth();
+
+const HeaderNav = () => {
   const { isLoggedin, setLoggedIn } = useContext(UserLogStatus) as any;
+  const [isModal, setModal] = useState(false);
 
   const handleModal = () => {
     setModal(() => !isModal);
-    setLoggedIn(() => !isLoggedin);
-    if (isLoggedin.isSignedIn) {
-      return <Redirect to="/profile" />;
-    }
   };
 
-  const hideElement = () => {
-    return isLoggedin ? styles.hide : '';
+  const handleLogOut = () => {
+    firebaseAuth.signOut().then(console);
+    setLoggedIn(() => false);
   };
 
   return (
@@ -42,17 +42,21 @@ const HeaderNav = ({ props }: any) => {
           </Link>
           <li className={`${styles.mainNav} ${styles.about}`}>About</li>
           <div className={styles.controlNav}>
-            <Link to="/" rel="noopener noreferrer">
-              <li className={`${styles.signIn} ${hideElement()}`}>Sign in</li>
-            </Link>
-
-            <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
-              {isLoggedin ? 'Log Out' : 'Register'}
-            </li>
+            <>
+              {isLoggedin ? (
+                <li className={`${styles.signOut} ${styles.button}`} onClick={handleLogOut}>
+                  Log Out
+                </li>
+              ) : (
+                <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
+                  Register
+                </li>
+              )}
+            </>
           </div>
         </ul>
       </div>
-      <Modal open={isModal} toggle={handleModal} props={props} />
+      <Modal open={isModal} toggle={handleModal} />
     </header>
   );
 };

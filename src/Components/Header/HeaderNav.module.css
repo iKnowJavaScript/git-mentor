@@ -177,7 +177,8 @@ a {
 }
 
 .community:hover,
-.signIn:hover {
+.signIn:hover,
+.signOut:hover {
   cursor: pointer;
   color: #0a0909;
 }

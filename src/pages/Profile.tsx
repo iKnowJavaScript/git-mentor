@@ -4,14 +4,10 @@ import DashboardHero from '../Components/Dashboard/Dashboard';
 import Greeting from '../Components/Sections/Greeting';
 import Footer from '../Components/Footer/Footer';
 
-const Profile = (props: any) => {
-  const {
-    location: { state }
-  } = props;
-
+const Profile = () => {
   return (
     <>
-      <HeaderNav props={props} />
+      <HeaderNav />
       <DashboardHero />
       <Greeting />
       <Footer />

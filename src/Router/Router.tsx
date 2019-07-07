@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Homepage from '../pages/Homepage';
 import Mentors from '../pages/Mentors';
 import Profile from '../pages/Profile';
 import { UserLogStatus, UserObject } from '../Context/Context';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const Navigator = () => {
-  const [isLoggedin, setLoggedIn] = useState({ isSignedIn: false });
+  const [isLoggedin, setLoggedIn] = useState<boolean>(false);
   const [userData, setUserData] = useState<any>({});
 
   return (
@@ -16,8 +17,7 @@ const Navigator = () => {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/mentors" component={Mentors} />
-            <Route path="/profile" component={Profile} />
-            {/* <Route path="/profile" component={Profile} /> */}
+            <PrivateRoute path="/profile" component={Profile} />
             <Route
               render={() => (
                 <h1
@@ -36,7 +36,5 @@ const Navigator = () => {
     </UserLogStatus.Provider>
   );
 };
-
-/* <Route path="/trip/:tripId" component={Trips} /> */
 
 export default Navigator;
