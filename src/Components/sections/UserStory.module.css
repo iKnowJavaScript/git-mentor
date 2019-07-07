@@ -186,4 +186,7 @@ figure {
   .grid_container {
     padding: 0;
   }
+  .grid_block:nth-child(n) {
+    margin-right: 1.5rem;
+  }
 }

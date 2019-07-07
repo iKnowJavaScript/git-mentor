@@ -7,8 +7,8 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyCPluhTwNxaZyeGKQaXmS_LW7t2OU6DN1U',
-  authDomain: 'gitmentor-d8678.firebaseapp.com'
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_DOMAIN
 });
 
 const firebaseAuth: any = firebase.auth();

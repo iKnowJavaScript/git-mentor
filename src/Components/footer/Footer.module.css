@@ -76,8 +76,11 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .infoHeader {
     display: none;
+  }
+  .product {
+    flex: 1;
   }
 }
