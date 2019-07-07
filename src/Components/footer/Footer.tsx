@@ -30,7 +30,7 @@ const Footer = () => {
           <div className={styles.info}>INFO</div>
           <div>
             <a href="./" className={styles.spanHeaders}>
-              Become a GitMentor
+              Become a Gitmentor
             </a>
             <a href="./" className={styles.spanHeaders}>
               Apply as a developer
@@ -45,14 +45,14 @@ const Footer = () => {
               Freelance Jobs
             </a>
             <a href="./" className={styles.spanHeaders}>
-              GitMentor Reviews
+              Gitmentor Reviews
             </a>
           </div>
         </div>
       </div>
       <div className={styles.rightContainer}>
         <div className={styles.footer}>
-          <div className={styles.copyright}>© Copyright 2019 GitMentor</div>
+          <div className={styles.copyright}>© Copyright 2019 Gitmentor</div>
           <div className={styles.links}>
             <a href="./" className={styles.others}>
               Privacy Policy
