@@ -37,9 +37,15 @@ const HeaderNav = () => {
           <Link to="/mentors" rel="noopener noreferrer">
             <li className={`${styles.mainNav} ${styles.button}`}>Mentors</li>{' '}
           </Link>
-          <Link to="/" rel="noopener noreferrer">
-            <li className={`${styles.mainNav} ${styles.community}`}>Community</li>
-          </Link>
+          {isLoggedin ? (
+            <Link to="/profile" rel="noopener noreferrer">
+              <li className={`${styles.mainNav} ${styles.community}`}>Profile</li>
+            </Link>
+          ) : (
+            <Link to="/" rel="noopener noreferrer">
+              <li className={`${styles.mainNav} ${styles.community}`}>Community</li>
+            </Link>
+          )}
           <li className={`${styles.mainNav} ${styles.about}`}>About</li>
           <div className={styles.controlNav}>
             <>
@@ -49,7 +55,7 @@ const HeaderNav = () => {
                 </li>
               ) : (
                 <li className={`${styles.signUp} ${styles.button}`} onClick={handleModal}>
-                  Register
+                  Begin
                 </li>
               )}
             </>

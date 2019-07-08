@@ -19,7 +19,12 @@ const Signin = () => {
 
   const uiConfig: any = {
     signInFlow: 'popup',
-    signInOptions: [firebase.auth.GithubAuthProvider.PROVIDER_ID],
+    signInOptions: [
+      {
+        provider: firebase.auth.GithubAuthProvider.PROVIDER_ID,
+        scopes: ['public_repo', 'read:org', 'read:user']
+      }
+    ],
     callbacks: {
       signInSuccess: () => false
     }

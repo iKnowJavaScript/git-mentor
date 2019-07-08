@@ -117,7 +117,7 @@ a {
   background: #f9f9f9;
   border-radius: 3px;
   width: calc(100% - 40px);
-  transform: translateY(-120px);
+  transform: translateY(-128px);
   text-decoration: none;
   transition: 0.2s cubic-bezier(0, 0, 0, 1);
   color: #000;

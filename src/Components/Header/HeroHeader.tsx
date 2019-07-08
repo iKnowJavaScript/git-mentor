@@ -24,8 +24,8 @@ const HeroHeader = () => {
           <div className={`${styles.heroItem} ${styles.matrixStyle}`}>
             <p>
               <span className={styles.disclaimer}>Disclaimer:</span> This is a space for those
-              looking to accelerate their career in Tech world, Gitmentor made it easy by connecting
-              you with Industry experts for advice and direction.
+              looking to accelerate their career in Tech world. Gitmentor made it easy by connecting
+              you with Industry experts for advice and directions.
             </p>
             <p className={styles.noAssembly}> *GitHub accout is required. </p>
           </div>
