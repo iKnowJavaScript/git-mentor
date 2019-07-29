@@ -152,7 +152,7 @@ img {
 }
 
 .headerBackground {
-  background-image: url('https://next-cdn.codementor.io/static/images/landing-page/hero-l.png');
+  background-image: url('../../assets/images/hero-header.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 755px;
@@ -246,3 +246,6 @@ a {
   font-weight: 100;
   font-size: 1rem;
 }
+
+
+

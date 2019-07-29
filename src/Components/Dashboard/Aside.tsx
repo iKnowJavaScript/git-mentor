@@ -12,31 +12,44 @@ const Aside = ({ userData }: any) => {
           <div className={styles.image}>
             <img className={styles.asideImage} alt={displayName} src={photoURL} />
           </div>
-          <div className={styles.name}>{displayName}</div>
-          <div className={styles.email}>{email}</div>
-          <h3 className={styles.location}>Lagos, Nigeria</h3>
 
-          <div className={styles.review}>
-            <p>8 Reviewers</p>{' '}
-          </div>
-          <hr className={styles.hr} />
-          <div className={styles.rating}>
-            5.0
-            <div className={styles.star}>
-              <Star /> <Star /> <Star /> <Star /> <Star />
+          <div className={styles.name}>{displayName}</div>
+
+          <div>
+            <div className={styles.profession}>Software Engineer / Fullstack</div>
+            <div className={styles.rating}>
+              <div className={styles.star}>
+                <Star /> <Star /> <Star /> <Star /> <Star />
+              </div>
+
+              <div> 5.0</div>
             </div>
           </div>
+
           <hr className={styles.hr} />
-          <div>
-            <h3>Has Mentored 20</h3>
+
+          <div className={styles.other_details}>
+            <h3 className={styles.detail_header}>Contact Information</h3>
+            <div className={styles.email}>
+              <h5>Email Address </h5>
+              <p>{email}</p>
+            </div>
+            <div className={styles.location}>
+              <h5>Location </h5>
+              <p>Lagos, Nigeria</p>
+            </div>
           </div>
+
           <hr className={styles.hr} />
-          <div>
-            <h3>Has 20 GitHub Star</h3>
-          </div>
-          <hr className={styles.hr} />
-          <div>
-            <h3>Followed by 20 People</h3>
+
+          <div className={styles.tags}>
+            <span className={styles.tag}>PHP</span>
+            <span className={styles.tag}>JavaScript</span>
+            <span className={styles.tag}>MySql</span>
+            <span className={styles.tag}>Git</span>
+            <span className={styles.tag}>Database</span>
+            <span className={styles.tag}>NodeJS</span>
+            <span className={styles.tag}>Testing</span>
           </div>
         </div>
       </div>

@@ -1,20 +1,18 @@
 import React from 'react';
 import styles from './HeroHeader.module.css';
 import { Link } from 'react-router-dom';
+import left_hero from '../../assets/svg/hero-bg-left.svg';
+import right_hero from '../../assets/svg/hero-bg-right.svg';
+import press_icon from '../../assets/svg/press-release-icon.svg';
+import arrow_icon from '../../assets/svg/arrow.svg';
 
 // className="bold-headline margin-top0 hero-item"
 const HeroHeader = () => {
   return (
     <>
       <div className={styles.heroContainer}>
-        <img
-          className={`${styles.heroBg} ${styles.heroBgLeft}`}
-          src="https://about.gitlab.com/images/home/hero-bg-left.svg"
-        />
-        <img
-          className={`${styles.heroBg} ${styles.heroBgRight}`}
-          src="https://about.gitlab.com/images/home/hero-bg-right.svg"
-        />
+        <img className={`${styles.heroBg} ${styles.heroBgLeft}`} src={left_hero} />
+        <img className={`${styles.heroBg} ${styles.heroBgRight}`} src={right_hero} />
 
         <div className={styles.heroContent}>
           <h1 className={styles.boldHeadline}>
@@ -49,19 +47,12 @@ const HeroHeader = () => {
       {/* </div>  hero ends */}
 
       <div className={styles.announcementContainer}>
-        <img
-          className={styles.icon}
-          src="https://about.gitlab.com/images/press/press-release-icon.svg"
-        />
+        <img className={styles.icon} src={press_icon} />
         <div className={styles.iconContent}>
           <p> Feel free to explore your mentor Git Repos in Dashboard </p>
         </div>
         <Link to="/mentors">
-          <img
-            alt="Gitlab arrow svg"
-            className={styles.announcementArrow}
-            src="https://about.gitlab.com/images/solutions/arrow.svg"
-          />
+          <img alt="Gitlab arrow svg" className={styles.announcementArrow} src={arrow_icon} />
         </Link>
       </div>
       <div className={styles.contactMentor}>
@@ -78,7 +69,7 @@ const HeroHeader = () => {
         <a className={styles.marginTop20} href="/#">
           {' '}
           Or, get started now with a free trial{' '}
-        </a>{' '}
+        </a>
       </div>
     </>
   );

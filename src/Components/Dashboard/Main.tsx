@@ -1,11 +1,16 @@
 import React from 'react';
 import styles from './Main.module.css';
 
+import collab from '../../assets/images/collaboration.png';
+import mentor from '../../assets/images/mentor.png';
+import clock from '../../assets/images/clock.png';
+
 const Main = ({ userData }: any) => {
   const { email, displayName, photoURL } = userData;
 
   return (
     <main className={styles.main}>
+      <div className={styles.user_details}>User Details</div>
       <div className={styles.container}>
         <div className={styles.about}>
           <h2>About {displayName}</h2>
@@ -17,27 +22,23 @@ const Main = ({ userData }: any) => {
         </div>
         <hr className={styles.hr} />
         <div className={styles.skills}>
-          <h2>SKILLS</h2>
-          <span className={styles.expert}>PHP</span>
-          <span className={styles.expert}>JavaScript</span>{' '}
-          <span className={styles.expert}>MySql</span>
-          <span className={styles.expert}>Git</span>
-          <span className={styles.expert}>Database</span>
+          <h2>Git Projects</h2>
         </div>
         <hr className={styles.hr} />
+
         <div className={styles.boxes}>
           <div className={`${styles.box} ${styles.collab}`}>
-            <p>icon</p>
+            <img src={collab} alt="collaboration" />
             <h2>Collaboration</h2>
             <h3>4</h3>
           </div>
           <div className={`${styles.box} ${styles.mentoring}`}>
-            <p>icon</p>
+            <img src={mentor} alt="mentor" />
             <h2>Mentoring</h2>
             <h3>3 ATM</h3>
           </div>
           <div className={`${styles.box} ${styles.hours}`}>
-            <p>icon</p>
+            <img src={clock} alt="clock" />
             <h2>Voluntering</h2>
             <h3>48 Hours</h3>
           </div>
