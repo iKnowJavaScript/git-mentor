@@ -48,17 +48,16 @@ const Signin = () => {
       ) : (
         <>
           <div className={styles.signin}>
-            <h2>Sign in</h2>
             <StyledFirebaseAuth
               uiConfig={uiConfig}
               firebaseAuth={firebaseAuth}
               className={`${styles.button} ${styles.accept} App`}
             />
-            <h3>or Sign in with GitHub Username</h3>
+            <h3>or Log in with GitHub Email</h3>
             <input
               className={`${styles.button} ${styles.input}`}
               type="text"
-              placeholder="Your GitHub Username"
+              placeholder="Your GitHub Email"
             />
 
             <button className={`${styles.button} ${styles.create}`}> Log in</button>
