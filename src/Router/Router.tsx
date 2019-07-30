@@ -5,6 +5,7 @@ import Mentors from '../pages/Mentors';
 import Profile from '../pages/Profile';
 import { UserLogStatus, UserObject } from '../Context/Context';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Error from '../Components/Error/Error';
 
 const Navigator = () => {
   const [isLoggedin, setLoggedIn] = useState<boolean>(false);
@@ -18,18 +19,7 @@ const Navigator = () => {
             <Route exact path="/" component={Homepage} />
             <Route path="/mentors" component={Mentors} />
             <PrivateRoute path="/profile" component={Profile} />
-            <Route
-              render={() => (
-                <h1
-                  style={{
-                    fontSize: '5rem',
-                    textAlign: 'center'
-                  }}
-                >
-                  Page Not Found
-                </h1>
-              )}
-            />
+            <Route render={() => <Error />} />
           </Switch>
         </Router>
       </UserObject.Provider>

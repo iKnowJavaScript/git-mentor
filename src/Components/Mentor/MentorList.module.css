@@ -196,6 +196,16 @@
   border: 1px solid #f56b42;
 }
 
+@media (max-width: 800px) {
+  .hire {
+    margin-top: 1.5rem;
+  }
+  .header {
+    margin-bottom: 1.5rem;
+    padding: 15px 0px;
+  }
+}
+
 @media (max-width: 420px) {
   .profile_pic {
     margin-bottom: 1rem;

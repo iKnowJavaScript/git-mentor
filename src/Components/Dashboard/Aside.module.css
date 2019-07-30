@@ -115,7 +115,6 @@ img {
   padding: 3px 15px;
   font-size: 14px;
   font-weight: 600;
-
 }
 
 .button {
@@ -150,6 +149,13 @@ img {
   .aside {
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+  .tags {
+    margin: auto auto;
+  }
+  .email,
+  .location {
+    text-align: center;
   }
 }
 

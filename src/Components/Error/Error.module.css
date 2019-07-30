@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+
+.container {
+  background-color: #aca1d3;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.title {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: black;
+  font-family: 'Cinzel', serif;
+  text-shadow: -2px -2px 2px #aaa, 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+.title:hover {
+  color: #4a144b;
+  cursor: pointer;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  margin-top: -4rem;
+  position: relative;
+}
+
+.image_text {
+  text-align: center;
+  position: absolute;
+  font-size: 7rem;
+  transform: translateY(20px);
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.text > h2 {
+  font-family: 'Rancho', cursive;
+  font-size: 3rem;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 3px;
+}
+
+.button:hover {
+  color: gray;
+}

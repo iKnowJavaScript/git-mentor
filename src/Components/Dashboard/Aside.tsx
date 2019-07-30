@@ -16,7 +16,7 @@ const Aside = ({ userData }: any) => {
           <div className={styles.name}>{displayName}</div>
 
           <div>
-            <div className={styles.profession}>Software Engineer / Fullstack</div>
+            <div className={styles.profession}>Snr. Software Engineer</div>
             <div className={styles.rating}>
               <div className={styles.star}>
                 <Star /> <Star /> <Star /> <Star /> <Star />
