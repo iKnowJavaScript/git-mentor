@@ -35,6 +35,7 @@ const Signin = () => {
       setLoggedIn(!!user);
       console.log('llogedein in sign in', isLoggedin, { user });
       if (user) {
+        console.log(user)
         const { providerData } = user;
         return setUserData(providerData[0]);
       }
